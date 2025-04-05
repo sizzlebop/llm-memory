@@ -17,43 +17,11 @@
   <a href="https://mem0.ai/email"><img src="https://img.shields.io/badge/substack-mem0-brightgreen.svg?logo=substack&label=mem0+substack" alt="Mem0 newsletter"></a>
 </p>
 
-# Mem0-TS: The Memory Layer for Personalized AI in TypeScript
+# The Memory Layer for Personalized AI in TypeScript
 
-Mem0-TS is the Typescript version of [mem0](https://github.com/mem0ai/mem0), which provides an intelligent, adaptive memory layer for Large Language Models (LLMs), enhancing personalized AI experiences by retaining and utilizing contextual information across diverse applications. This enhanced memory capability is crucial for applications ranging from customer support and healthcare diagnostics to autonomous systems and personalized content recommendations, allowing AI to remember user preferences, adapt to individual needs, and continuously improve over time.
+This memory app provides an intelligent, adaptive memory layer for Large Language Models (LLMs), enhancing personalized AI experiences by retaining and utilizing contextual information across diverse applications. This enhanced memory capability is crucial for applications ranging from customer support and healthcare diagnostics to autonomous systems and personalized content recommendations, allowing AI to remember user preferences, adapt to individual needs, and continuously improve over time.
 
-## 🚀 Quickstart
 
-### Installation
-
-The Mem0-TS package can be installed directly from npm:
-
-```bash
-npm install mem0ai-ts
-```
-
-> [!NOTE]
-> The Mem0-TS currently (20240727) is only supported OpenAI LLM; however, embedding model could use huggingface and ollama.
-
-Set OpenAI key:
-
-```
-process.env.OPENAI_API_KEY = "sk-xxx";
-```
-
-### Usage
-
--   import and initialize"
-
-```
-import Memory from "mem0-ts";
-
-const m = new Memory();
-await m.initialize();
-```
-
--   add memory
-
-```
 await m.add("I am working on improving my tennis skills. Suggest some online courses.", "alice", { category: "hobbies" });
 
 ```
